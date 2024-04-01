@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
 //    printf("Hello World\n my name is \"sun\" \n address = ddd\n");
     printf("Hello World\n");
     printf("my name is \"sun\"\n");
