@@ -29,9 +29,9 @@ int calcu(int a, char b, int c) {
             return sum(a, c);
         case '-':
             return minus(a, c);
-        case '/':
-            return duplicate(a, c);
         case '*':
+            return duplicate(a, c);
+        case '/':
             return division(a, c);
         default:
             return 0;
