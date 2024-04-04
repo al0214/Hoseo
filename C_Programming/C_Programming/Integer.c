@@ -11,6 +11,8 @@ int main(void){
     
     int num1, num2, sum;
     
+    printf("4칙 연산할 두 가지의 숫자를 입력해 주세요\n");
+    
     printf("첫번째 수를 입력해 주세요 : ");
     scanf("%d", &num1);
     
