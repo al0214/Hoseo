@@ -10,9 +10,11 @@ Welcome to GDB Online.
 #include <stdlib.h>
 #include <time.h>
 
-int main()
+int main(void)
 {
-    srand(time(NULL));
+    
+    time_t currentTime = time(NULL);
+    srand((unsigned int)currentTime);
     int total[5] = {0};
     for(int i=0; i<10000; i++){
         total[rand() % 6]++;

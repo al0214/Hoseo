@@ -23,7 +23,7 @@ void exec1(void){
     
     int line;
     scanf("%d", &line);
-    for (int i=0; i<line; i++) {
+    for (int i=line; 0>i; i--) {
         printSpace(line-i-1);
         printStar(2*i+1);
         printf("\n");

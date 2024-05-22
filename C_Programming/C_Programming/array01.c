@@ -1,22 +1,16 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
-  Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-int main()
+int main(void)
 {
-    srand(time(NULL));
-    int max = 0, min = 0, c=0, count=0;
-    int total[20];
+    time_t currenttime = time(NULL);
+    srand((unsigned int)currenttime);
     
-    for(int i=0; i<20; i++){
+    int max = 0, min = 0, c=0, count=0;
+    int total[100];
+    
+    for(int i=0; i<100; i++){
         total[i] = (rand() % 100) + 1;
         printf("%d ",total[i]);
     }
