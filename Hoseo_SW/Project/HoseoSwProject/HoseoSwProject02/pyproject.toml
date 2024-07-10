@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hoseoswproject02"
+version = "0.1.0"
+description = ""
+authors = ["al0214 <sisang951@hansei.sen.hs.kr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.9"
+uvicorn = "^0.30.1"
+fastapi = "^0.111.0"
+pydantic = "^2.8.0"
+jinja2 = "^3.1.4"
+python-multipart = "^0.0.9"
+email-validator = "^2.2.0"
+beanie = "1.13.1"
+requests = "^2.32.3"
+pandas = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
