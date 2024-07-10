@@ -27,39 +27,45 @@
         <div style="margin-top: 50px;" class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="card">
-                <img id="ATT_FILE_NO_MK" src="http://www.foodsafetykorea.go.kr/uploadimg/cook/10_00028_1.png" class="card-img-top" alt="...">
+                <img id="ATT_FILE_NO_MK" src="{{ data[0]['ATT_FILE_NO_MK'] }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 id="RCP_NM" class="card-title"><b>새우 두부 계란찜</b></h5>
-                  <p id="RCP_PAT2">요리 종류 - 반찬</p>
-                  <p id="INFO_ENG">열량 - 220 Kcal</p>
-                  <p id="RCP_PARTS_DTLS">재료 - 새우두부계란찜 연두부 75g(3/4모), 칵테일새우 20g(5마리), 달걀 30g(1/2개), 생크림 13g(1큰술), 설탕 5g(1작은술), 무염버터 5g(1작은술) 고명 시금치 10g(3줄기)</p>
+                  <h5 id="RCP_NM" class="card-title"><b>{{ data[0]['RCP_NM'] }}</b></h5>
+                  <p id="RCP_PAT2">요리 종류 - {{ data[0]['RCP_PAT2'] }}</p>
+                  <p id="INFO_ENG">열량 - {{ data[0]['INFO_ENG'] }}Kkal</p>
+                  <p id="RCP_PARTS_DTLS">재료 - {{ data[0]['RCP_PARTS_DTLS'] }}</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="https://img.danawa.com/prod_img/500000/658/240/img/1240658_1.jpg?_v=20240202145624" class="card-img-top" alt="...">
+                <img id="ATT_FILE_NO_MK" src="{{ data[1]['ATT_FILE_NO_MK'] }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"><b>김치사발면</b></h5>
-                  <p class="card-text">육개장과 마찬가지로 사발면 버전을 큰사발 버전으로 출시한 것이다. 출시는 작은 사발면이 4년 정도 더 빠르다. 강화판이라곤 하지만, 형만 한 아우 없다고 오리지날보다 맛이 떨어진다. 이쪽도 육개장과 마찬가지로 일반 큰사발면 시리즈보다는 면발이 가늘다. 면발이 굵은 큰사발에 비해 면발이 가느다란 원조가 더 맛있다는 평이 압도적이다. 대부분의 PC방에서 새우탕과 튀김우동은 불티나게 팔리지만, 김치 큰사발은 들여놓지를 않거나 있어도 잘 안 나가는 편.</p>
+                  <h5 id="RCP_NM" class="card-title"><b>{{ data[1]['RCP_NM'] }}</b></h5>
+                  <p id="RCP_PAT2">요리 종류 - {{ data[1]['RCP_PAT2'] }}</p>
+                  <p id="INFO_ENG">열량 - {{ data[1]['INFO_ENG'] }}Kkal</p>
+                  <p id="RCP_PARTS_DTLS">재료 - {{ data[1]['RCP_PARTS_DTLS'] }}</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img id="ATT_FILE_NO_MK" src="{{ data[2]['ATT_FILE_NO_MK'] }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <h5 id="RCP_NM" class="card-title"><b>{{ data[2]['RCP_NM'] }}</b></h5>
+                  <p id="RCP_PAT2">요리 종류 - {{ data[2]['RCP_PAT2'] }}</p>
+                  <p id="INFO_ENG">열량 - {{ data[2]['INFO_ENG'] }}Kkal</p>
+                  <p id="RCP_PARTS_DTLS">재료 - {{ data[2]['RCP_PARTS_DTLS'] }}</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <img id="ATT_FILE_NO_MK" src="{{ data[3]['ATT_FILE_NO_MK'] }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 id="RCP_NM" class="card-title"><b>{{ data[3]['RCP_NM'] }}</b></h5>
+                  <p id="RCP_PAT2">요리 종류 - {{ data[3]['RCP_PAT2'] }}</p>
+                  <p id="INFO_ENG">열량 - {{ data[3]['INFO_ENG'] }}Kkal</p>
+                  <p id="RCP_PARTS_DTLS">재료 - {{ data[3]['RCP_PARTS_DTLS'] }}</p>
                 </div>
               </div>
             </div>

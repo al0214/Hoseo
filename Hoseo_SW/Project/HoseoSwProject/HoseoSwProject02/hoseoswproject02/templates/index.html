@@ -11,26 +11,28 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      var inputValue = $('#inputValue').val();
       $('#submitButton').click(function() {
-        $.ajax({
-          type: 'POST',
-          url: '/list/data', // 여기에 실제 요청을 보낼 URL을 입력하세요.
-          data: JSON.stringify({ "apiValue" : inputValue }), // 서버로 보낼 데이터를 JSON 형식으로 작성하세요.
-          contentType: 'application/json; charset=utf-8',
-          success: function(response) {
-            if(response.status_code === 200){
-              window.location.href = "http://localhost:8080/list";
-            } else {
-              alert("전송에 실패했습니다.")
-            }
-          },
-          error: function(error) {
-              alert("실패")
-          }
+          var inputValue = $('#inputValue').val(); // 클릭 시점에서 input의 값을 가져옴
+  
+          $.ajax({
+              type: 'POST',
+              url: '/list/data', // 실제 요청을 보낼 URL
+              data: JSON.stringify({ apiValue: inputValue }), // 서버로 보낼 데이터를 JSON 형식으로 작성
+              contentType: 'application/json; charset=utf-8',
+              success: function(response) {
+                  if (response.status_code === 200) {
+                      // 성공 시 페이지를 재로딩
+                      window.location.href = "http://localhost:8080/list";
+                  } else {
+                      alert("전송에 실패했습니다.");
+                  }
+              },
+              error: function(error) {
+                  alert("요청 실패");
+              }
+          });
       });
-      }
-    )});
+  });
   </script>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
