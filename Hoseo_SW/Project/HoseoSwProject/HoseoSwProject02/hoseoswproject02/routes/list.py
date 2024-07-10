@@ -26,7 +26,7 @@ async def retrieve_main(request: Request):
 @list_router.post("/data")
 async def get_api_para(id: apiVal):
     n = id.apiValue.strip()
-    url = f'http://openapi.foodsafetykorea.go.kr/api/cc1b2a587a5a42d09890/COOKRCP01/json/1/5/RCP_NM=""&RCP_PARTS_DTLS="{n}"'
+    url = f'http://openapi.foodsafetykorea.go.kr/api/api/COOKRCP01/json/1/5/RCP_NM=""&RCP_PARTS_DTLS="{n}"'
     response = requests.get(url)
     with open("./recipe.json", 'wb') as f:
         f.write(response.content)
