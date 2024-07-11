@@ -3,6 +3,7 @@ from fastapi.staticfiles import StaticFiles
 
 from routes.input import main_router
 from routes.list import list_router
+from routes.info import info_router
 
 import uvicorn
 
@@ -10,6 +11,7 @@ app = FastAPI()
 
 app.include_router(main_router, prefix="/main")
 app.include_router(list_router, prefix="/list")
+app.include_router(info_router, prefix="/info")
 
 
 app.mount("/static", StaticFiles(directory="static"), name="static")

@@ -8,26 +8,31 @@
   </head>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a href="/main"><img src="{{ url_for('static', path='/logo02.png') }}" width="140" height="30" style="margin-right: 15px;"></a>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/main"><button type="button" class="btn btn-primary">돌아가기</button></a>
-            </li>
-          </ul>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a href="/info/01"><img src="{{ url_for('static', path='/logo02.png') }}" width="140" height="30" style="margin-right: 15px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/info/01">홈 페이지</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/info/02">웹 페이지 소개⬆️</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
       <div style="padding: 70px;">
         <h2 style="text-align: center; margin-bottom: 50px"><b>이런 음식들은 어때요?🧐</b></h2>
         <hr class="border border-primary border-3 opacity-10">
         <div style="margin-top: 50px;" class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="card">
-                <img id="ATT_FILE_NO_MK" src="{{ data[0]['ATT_FILE_NO_MK'] }}" class="card-img-top" alt="...">
+                <a href="data/01">
+                  <img id="ATT_FILE_NO_MK" src="{{ data[0]['ATT_FILE_NO_MK'] }}"href="list/data/01" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
                   <h5 id="RCP_NM" class="card-title"><b>{{ data[0]['RCP_NM'] }}</b></h5>
                   <p id="RCP_PAT2">요리 종류 - {{ data[0]['RCP_PAT2'] }}</p>
@@ -38,7 +43,9 @@
             </div>
             <div class="col">
               <div class="card">
-                <img id="ATT_FILE_NO_MK" src="{{ data[1]['ATT_FILE_NO_MK'] }}" class="card-img-top" alt="...">
+                <a href="data/02">
+                  <img id="ATT_FILE_NO_MK" src="{{ data[1]['ATT_FILE_NO_MK'] }}" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
                   <h5 id="RCP_NM" class="card-title"><b>{{ data[1]['RCP_NM'] }}</b></h5>
                   <p id="RCP_PAT2">요리 종류 - {{ data[1]['RCP_PAT2'] }}</p>
@@ -49,7 +56,9 @@
             </div>
             <div class="col">
               <div class="card">
-                <img id="ATT_FILE_NO_MK" src="{{ data[2]['ATT_FILE_NO_MK'] }}" class="card-img-top" alt="...">
+                <a href="data/03">
+                  <img id="ATT_FILE_NO_MK" src="{{ data[2]['ATT_FILE_NO_MK'] }}" href="list/data/03" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
                   <h5 id="RCP_NM" class="card-title"><b>{{ data[2]['RCP_NM'] }}</b></h5>
                   <p id="RCP_PAT2">요리 종류 - {{ data[2]['RCP_PAT2'] }}</p>
@@ -60,7 +69,9 @@
             </div>
             <div class="col">
               <div class="card">
-                <img id="ATT_FILE_NO_MK" src="{{ data[3]['ATT_FILE_NO_MK'] }}" class="card-img-top" alt="...">
+                <a href="data/04">
+                  <img id="ATT_FILE_NO_MK" src="{{ data[3]['ATT_FILE_NO_MK'] }}" href="list/data/04" class="card-img-top" alt="...">
+                </a>
                 <div class="card-body">
                   <h5 id="RCP_NM" class="card-title"><b>{{ data[3]['RCP_NM'] }}</b></h5>
                   <p id="RCP_PAT2">요리 종류 - {{ data[3]['RCP_PAT2'] }}</p>

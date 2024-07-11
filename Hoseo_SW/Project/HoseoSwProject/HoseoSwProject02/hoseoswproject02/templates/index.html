@@ -23,8 +23,8 @@
                   if (response.status_code === 200) {
                       // 성공 시 페이지를 재로딩
                       window.location.href = "http://localhost:8080/list";
-                  } else {
-                      alert("전송에 실패했습니다.");
+                  } else if(response.status_code == 404) {
+                      alert("전송에 실패했습니다. 다시 시도해 주세요");
                   }
               },
               error: function(error) {
@@ -34,14 +34,22 @@
       });
   });
   </script>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a href="/main"><img src="{{ url_for('static', path='/logo02.png') }}" width="140" height="30" style="margin-right: 15px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a href="/info/01"><img src="{{ url_for('static', path='/logo02.png') }}" width="140" height="30" style="margin-right: 15px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/info/01">홈 페이지</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/info/02">웹 페이지 소개⬆️</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
       <div style="text-align: center; margin-top : 130px;">
         <h1 style="margin-bottom : 50px;">👨‍🍳<b>기준셰프의 100가지 레시피</b>🍖</h1>
         <p>가지고 있는 재료를 입력한 후 <b>시작</b> 버튼을 눌러주세요!</p>
