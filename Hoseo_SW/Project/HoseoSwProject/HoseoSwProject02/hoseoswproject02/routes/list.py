@@ -28,7 +28,7 @@ apiData = []
 @list_router.post("/data")
 async def get_api_para(id: apiVal):
     l.clear()
-    base_url = 'http://openapi.foodsafetykorea.go.kr/api/apiInsert/COOKRCP01/json/1/5/RCP_NM = ""'
+    base_url = 'http://openapi.foodsafetykorea.go.kr/api/cc1b2a587a5a42d09890/COOKRCP01/json/1/5/RCP_NM = ""'
     n = id.apiValue.split(",")
     url = base_url + ''.join(
         [f'&RCP_PARTS_DTLS="{ingredient.strip()}"' for ingredient in n])
