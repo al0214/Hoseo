@@ -6,3 +6,13 @@
 //
 
 #include <stdio.h>
+int main(void){
+  
+    int i = 1;
+    int *p;
+    p = &i;
+    
+    
+    printf();
+    return 0;
+}

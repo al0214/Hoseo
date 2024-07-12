@@ -6,3 +6,12 @@
 //
 
 #include <stdio.h>
+int main(void){
+    int i = 100;
+    int* p = &i;
+    
+    
+    printf("%d\n", p);
+    printf("%u\n", (*p)++);
+    return 0;
+}

@@ -6,3 +6,11 @@
 //
 
 #include <stdio.h>
+int add(int a, int b);
+int main(void){
+    int sum=0;
+    sum = add(10, 20);
+    printf("%d", sum);
+    
+    return 0;
+}
