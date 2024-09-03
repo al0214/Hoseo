@@ -17,20 +17,13 @@ int main(void){
     
     int number[10];
 
-    
     for(int i = 0; i<10; i++){
-        number[i] = (rand()%1000)+1;
+        number[i] = (rand()%100)+1;
     }
-    
-    
-    
-    
     
     for(int i = 0; i<10; i++){
         printf("number = %d\n", number[i]);
     }
-    
-    
     
     return 0;
 }
